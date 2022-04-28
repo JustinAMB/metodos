@@ -7,7 +7,6 @@ function [m] = tangente(f,a,b,it)
         m(i,2)=subs(str2sym(f),a);
         m(i,3)=b;
         m(i,4)=subs(str2sym(f),b);
-        mi=mi+((b-a)/2);
         m(i,5)=b - ((subs(str2sym(f),b)*(b-a)) / (subs(str2sym(f),b) - subs(str2sym(f),a)));
         m(i,6)=subs(str2sym(f),m(i,5));
         a=b;
