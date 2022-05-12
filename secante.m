@@ -1,4 +1,4 @@
-function [m] = tangente(f,a,b,it)
+function [m] = secante(f,a,b,it)
      
     m=zeros(it,7);
     
